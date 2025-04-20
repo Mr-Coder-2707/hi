@@ -268,11 +268,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // Check for keywords
-      if (keyBuffer.includes("dark")) {
-        setTheme("dark");
+      if (keyBuffer.includes("d")) {
+        setTheme("d");
         showThemeNotification("🌙 Dark mode activated");
         keyBuffer = ""; // Reset buffer after activation
-      } else if (keyBuffer.includes("white")) {
+      } else if (keyBuffer.includes("w")) {
         setTheme("light");
         showThemeNotification("☀️ Light mode activated");
         keyBuffer = ""; // Reset buffer after activation
@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to set theme
   function setTheme(theme) {
-    if (theme === "dark") {
+    if (theme === "d") {
       document.body.classList.remove("light-mode");
     } else {
       document.body.classList.add("light-mode");
